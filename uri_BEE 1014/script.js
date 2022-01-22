@@ -2,8 +2,9 @@ const input = require('fs').readFileSync('stdin', 'utf8');
 
 const [distanciaPercorrida, conbustivelGasto] = input.split('\n');
 
-const consumoMedio = distanciaPercorrida / conbustivelGasto;
+const consumoMedio = (distanciaPercorrida / conbustivelGasto).toFixed(3);
 
-console.log(consumoMedio.toFixed(3) + " Km/l");
+const a = parseFloat(consumoMedio);
+console.log(a + " Km/l");
 
 
